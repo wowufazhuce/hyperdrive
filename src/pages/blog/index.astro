@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+import CardBlogPost from "~/components/CardBlogPost.astro";
+const posts = await getCollection("blog");
+---
+
+<Layout>
+	<Section>
+		<Container>
+			<Heading>
+				<h1 slot="heading-title">新闻资讯</h1>
+				<p slot="heading-content">
+					在这里，您可以了解到我们汽车经销商的最新资讯和动态。敬请关注新的资讯文章。
+				</p>
+			</Heading>
+
+			<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-24">
+				{posts.map((post, index) => <CardBlogPost post={post} index={index} />)}
+			</div>
+		</Container>
+	</Section>
+</Layout>

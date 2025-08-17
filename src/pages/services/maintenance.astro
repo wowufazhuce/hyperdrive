@@ -1,0 +1,41 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+import FAQ from "~/components/Faq.astro";
+
+const faqItems = [
+	{
+		question: "保养服务包括哪些内容？",
+		answer: "我们提供全面的保养服务，包括油更、轮胎轮换、制动检查和 fluid 检查。",
+	},
+	{
+		question: "我应该多久保养一次？",
+		answer: "建议每 6 个月或 5,000 英里保养一次，以先到为准。但是，始终参考您的车辆手册以获取具体指导。",
+	},
+	{
+		question: "保养服务的费用是多少？",
+		answer: "保养费用根据问题的复杂程度和零件的成本而变化。我们会在保养开始前提供详细的费用说明。",
+	},
+];
+---
+
+<Layout pageTitle="Maintenance" title="Maintenance">
+	<Section class:list={"bg-gray-50"}>
+		<Container>
+			<Heading>
+				<h1 slot="heading-title">保养服务</h1>
+				<p slot="heading-content">
+					在 HyperDrive，我们提供一流的保养服务，让您的豪华座始终保持完美状态。我们的专业技师团队配备最新工具和技术，能胜任各类保养工作，无论大小。
+				</p>
+			</Heading>
+		</Container>
+	</Section>
+
+	<Section class:list={"bg-white"}>
+		<Container>
+			<FAQ items={faqItems} />
+		</Container>
+	</Section>
+</Layout>

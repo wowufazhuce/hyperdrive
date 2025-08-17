@@ -1,0 +1,29 @@
+[
+	{
+		"name": "高邦磊",
+        "slug": "gaobanglei",
+		"role": "CEO",
+		"image": "/src/assets/images/team/icon.webp",
+		"alt": "image of John Doe",
+        "email": "k@kkk.icu",
+        "phone": "+86 180 9003 2186"
+	},
+	{
+		"name": "王超贤",
+        "slug": "wangchaoxian",
+		"role": "CTO",
+		"image": "/src/assets/images/team/b511.png",
+		"alt": "image of Jane Doe",
+        "email": "wangchaoxian@kkk.icu",
+        "phone": "+86 180 9003 2188"
+	},
+	{
+		"name": "小强",
+        "slug": "xiaoqiang",
+		"role": "CFO",
+		"image": "/src/assets/images/team/3.webp",
+		"alt": "image of John Smith",
+        "email": "xiaoqiang@kkk.icu",
+        "phone": "+86 180 9003 2189"
+	}
+]

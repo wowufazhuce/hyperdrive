@@ -1,0 +1,27 @@
+---
+import IconChevronDown from "~/assets/images/icons/chevron-down-select.svg";
+---
+
+<form id="form-sort">
+	<div class="lg:shrink-0">
+		<div class="flex items-center gap-x-2">
+			<label class="sr-only" for="sort">Sort</label>
+		</div>
+		<div class="grid grid-cols-1 max-lg:w-max ml-auto">
+			<select
+				name="sort"
+				id="sort"
+				class="appearance-none max-lg:mt-0 col-start-1 bg-transparent max-lg:outline-none outline-gray-300 row-start-1 pr-10"
+			>
+				<option value="all">排序</option>
+				<option value="mileage-desc">里程: 高到低</option>
+				<option value="mileage-asc">里程: 低到高</option>
+				<option value="price-desc">价格: 高到低</option>
+				<option value="price-asc">价格: 低到高</option>
+				<option value="year-desc">年份: 近到远</option>
+				<option value="year-asc">年份: 远到近</option>
+			</select>
+			<IconChevronDown class="icon-chevron-down" />
+		</div>
+	</div>
+</form>

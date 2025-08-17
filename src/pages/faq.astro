@@ -1,0 +1,241 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+---
+
+<Layout pageTitle="常见问题" title="常见问题" description="HyperDrive常见问题解答 - 为您提供购车、贷款、售后等方面的常见问题解答">
+	<Section class:list={"bg-gray-50"}>
+		<Container>
+			<div class="max-w-3xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+				<Heading>
+					<h1 class="text-2xl md:text-3xl font-bold text-gray-900" slot="heading-title">常见问题</h1>
+					<p slot="heading-content" class="text-gray-600 mt-3">
+						我们整理了用户最常咨询的问题及解答，希望能帮助您更好地了解我们的服务。如果您有其他疑问，欢迎联系我们的客服团队。
+					</p>
+				</Heading>
+
+				<div class="mt-12 space-y-6">
+					<!-- 购车流程 -->
+					<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 p-4 bg-gray-50 border-b border-gray-100">购车流程</h2>
+						
+						<div class="divide-y divide-gray-100">
+							<!-- 问题1 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">如何在HyperDrive购买汽车？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									您可以通过我们的网站浏览并选择心仪的车型，在线预约试驾或直接提交购车申请。我们的销售顾问会在24小时内与您联系，协助您完成后续的购车手续，包括贷款申请（如需）、车辆检测和交付等环节。
+								</div>
+							</div>
+							
+							<!-- 问题2 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">购车需要准备哪些证件？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									个人购车需提供身份证、驾驶证；企业购车需提供营业执照、法人身份证及委托书。如需办理贷款，还需提供收入证明、银行流水等相关材料。
+								</div>
+							</div>
+							
+							<!-- 问题3 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">车辆交付需要多长时间？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									现车交付通常可在3-5个工作日内完成；如车辆需要调货或定制配置，交付时间一般为1-4周，具体时间我们会在购车时与您确认。
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 贷款与支付 -->
+					<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 p-4 bg-gray-50 border-b border-gray-100">贷款与支付</h2>
+						
+						<div class="divide-y divide-gray-100">
+							<!-- 问题1 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">HyperDrive提供哪些贷款方案？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									我们提供多种灵活的贷款方案，包括银行分期贷款、金融公司贷款等，首付比例可低至10%，贷款期限最长可达60个月。您可以在网站上使用贷款计算器估算月供，或联系我们的金融顾问获取个性化方案。
+								</div>
+							</div>
+							
+							<!-- 问题2 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">支持哪些支付方式？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									我们支持银行转账、信用卡支付、借记卡支付等多种方式。购车首付款可通过线上支付或到店支付，贷款月供将通过您绑定的银行卡自动扣除。
+								</div>
+							</div>
+							
+							<!-- 问题3 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">贷款审批需要多长时间？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									提交完整的贷款申请材料后，通常可在1-3个工作日内完成审批。审批结果将通过短信或电话通知您，您也可以登录账户查询审批进度。
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 车辆售后 -->
+					<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 p-4 bg-gray-50 border-b border-gray-100">车辆售后</h2>
+						
+						<div class="divide-y divide-gray-100">
+							<!-- 问题1 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">购买的车辆享受哪些保修服务？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									我们销售的新车均享受原厂保修服务，具体保修期限和范围因品牌和车型而异，一般为3年或10万公里（以先到者为准）。二手车经过严格检测，部分车型可提供延长保修服务。
+								</div>
+							</div>
+							
+							<!-- 问题2 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">如何预约车辆保养？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									您可以通过网站、手机APP或拨打客服电话预约保养服务。我们在全国拥有多家合作服务中心，您可以选择就近的网点进行保养，预约成功后将收到详细的服务提醒。
+								</div>
+							</div>
+							
+							<!-- 问题3 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">车辆出现问题时如何寻求帮助？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									如遇车辆故障或其他问题，请拨打我们的24小时道路救援热线：400-888-9999。我们将根据情况安排救援服务或指导您前往最近的服务中心进行检修。
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 试驾服务 -->
+					<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 p-4 bg-gray-50 border-b border-gray-100">试驾服务</h2>
+						
+						<div class="divide-y divide-gray-100">
+							<!-- 问题1 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">如何预约试驾？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									在车型详情页点击"预约试驾"按钮，选择就近的门店和合适的时间，填写联系方式即可完成预约。我们的工作人员会在1个工作日内与您确认试驾详情。
+								</div>
+							</div>
+							
+							<!-- 问题2 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">试驾需要满足什么条件？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									试驾者需年满18周岁，持有有效的机动车驾驶证且驾龄满1年以上。试驾时请携带驾驶证原件，签署试驾协议后即可进行试驾。
+								</div>
+							</div>
+							
+							<!-- 问题3 -->
+							<div class="faq-item">
+								<button class="faq-question w-full flex justify-between items-center p-4 text-left focus:outline-none">
+									<span class="text-base font-semibold text-gray-900">提供多长时间的试驾？</span>
+									<svg class="faq-icon size-5 text-gray-500 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+									</svg>
+								</button>
+								<div class="faq-answer hidden p-4 pt-0 text-gray-700">
+									常规试驾时间为30-60分钟，部分车型支持72小时深度试驾服务（限特定城市）。深度试驾需支付少量押金，试驾结束无损伤、无违章记录即全额退还。
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</Section>
+</Layout>
+
+<script is:inline>
+	// 折叠面板交互逻辑
+	document.addEventListener('DOMContentLoaded', () => {
+		const faqQuestions = document.querySelectorAll('.faq-question');
+		
+		faqQuestions.forEach(question => {
+			question.addEventListener('click', () => {
+				// 切换当前问题的展开状态
+				const answer = question.nextElementSibling;
+				const icon = question.querySelector('.faq-icon');
+				
+				answer.classList.toggle('hidden');
+				icon.classList.toggle('rotate-180');
+			});
+		});
+	});
+</script>
+
+<style is:global>
+	/* 折叠面板样式 */
+	.faq-item {
+		transition: background-color 0.2s ease;
+	}
+	
+	.faq-item:hover {
+		background-color: #f9fafb;
+	}
+	
+	.faq-question:hover .faq-icon {
+		color: #3b82f6;
+	}
+</style>
+     

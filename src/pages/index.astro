@@ -1,0 +1,233 @@
+---
+import { Image } from "astro:assets";
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Button from "~/components/Button.astro";
+import Hero from "~/components/Hero.astro";
+import Faq from "~/components/Faq.astro";
+import Heading from "~/components/Heading.astro";
+import WidgetSearch from "~/components/WidgetSearch.astro";
+import Grid from "~/components/Grid.astro";
+import GridItem from "~/components/GridItem.astro";
+import ShowPosts from "~/components/ShowPosts.astro";
+import Team from "~/components/Team.astro";
+import Stats from "~/components/Stats.astro";
+
+// Images
+import ImageCarDealer from "~/assets/images/pexels-shkrabaanthony-7144179.jpg";
+import ImageHeadingBackground from "~/assets/images/pexels-jeshoots-com-147458-451590.webp";
+import ShowCars from "~/components/ShowCars.astro";
+import ImageOne from "~/assets/images/pexels-leif-bergerson-99376750-9764731.webp";
+import ImageTwo from "~/assets/images/pexels-zenzazione-2922140.webp";
+---
+
+<Layout pageTitle="Home">
+	{/* Main Heading */}
+	<Section class:list={"relative"}>
+		<Image
+			src={ImageHeadingBackground}
+			alt="Heading background"
+			class:list={"absolute inset-0 w-full h-full object-cover"}
+		/>
+		<div class="absolute inset-0 w-full h-full object-cover bg-gray-800/80"></div>
+		<Container class:list={"relative z-10"}>
+			<Heading class:list={"prose-invert max-w-4xl"}>
+				<h1 slot="heading-title" class="mb-0 lg:text-7xl text-balance">
+					在这里，遇见您的下一段旅程
+				</h1>
+				<p slot="heading-content">
+					无论是风驰电掣的驾驶激情，还是温馨舒适的家庭时光，我们的每一款车都在等待成为您人生新篇章的见证者！
+				</p>
+			</Heading>
+			<WidgetSearch />
+		</Container>
+	</Section>
+
+	{/* Stats */}
+	<Section>
+		<Container>
+			<Heading class:list={"text-center mx-auto"}>
+				<h2 slot="heading-title" class="text-balance">为什么选择我们？</h2>
+				<p slot="heading-content">
+					我们是中国领先的汽车经销商，拥有20多年的销售经验，帮助成千上万的客户找到他们的梦想之车。
+				</p>
+			</Heading>
+
+			<Stats
+				items={[
+					{
+						title: "服务团队",
+						value: "2369",
+						animateNumber: true,
+						animateFrom: 2232,
+					},
+					{
+						title: "购车客户",
+						value: "100000+",
+						animateNumber: true,
+						animateFrom: 99801,
+					},
+					{
+						title: "销售经验",
+						value: "20多年",
+					},
+				]}
+			/>
+		</Container>
+	</Section>
+
+	{/* Grid */}
+	<Section>
+		<Container>
+			<Grid>
+				<GridItem image={ImageOne} imageAlt="Car dealer" span={2} link="/cars" As="a" xl>
+					<h2>精选车型</h2>
+					<p>
+						探索我们精选车型带来的极致驾驶体验。
+						无论您想寻找一款造型流畅的跑车、一辆可靠的家庭用车，还是一款环保的混合动力车，我们都能满足不同人的需求。
+						我们的庞大库存经过精心筛选，确保您能找到与自己生活方式和预算完美匹配的车型。
+					</p>
+					<Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
+						>查看所有车辆</Button
+					>
+				</GridItem>
+
+				<GridItem image={ImageTwo} imageAlt="Car dealer" link="/services" As="a">
+					<h3>保养维修</h3>
+					<p>
+						我们的保养维修团队为您的爱车提供专业的保养和维修服务。
+						从日常保养到专业的故障排除，我们的团队成员都有丰富的经验和技术知识。
+						您可以放心地将您的爱车托付给我们，让我们为您的爱车保驾护航。
+					</p>
+					<Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
+						>查看我们的服务</Button
+					>
+				</GridItem>
+
+				<GridItem image={ImageCarDealer} imageAlt="Car dealer" link="/blog" As="a">
+					<h3>资讯动态</h3>
+					<p>
+						我们的资讯动态团队为您提供最新的汽车资讯和动态。
+						我们的团队成员都是行业专家，他们会定期发布最新的汽车资讯和动态。
+						您可以随时关注我们的资讯动态，了解最新的汽车资讯和动态。
+					</p>
+					<Button As="button" type="button" color="white-outline" class:list={"mt-4 group-hover:bg-white/10"}
+						>查看资讯和动态</Button
+				</GridItem>
+			</Grid>
+		</Container>
+	</Section>
+
+	{/* Cars */}
+	<Section class:list={"bg-blue-50"}>
+		<Container>
+			<Heading>
+				<h2 slot="heading-title" class="mb-0">精品推荐车型</h2>
+				<p slot="heading-content">
+					甄选您的下一台座驾，从这里开始。<br>我们坐拥海量在售车型，邀您浏览精选车系，轻松找到契合需求与预算的理想之选。
+				</p>
+			</Heading>
+
+			<ShowCars slugs={["audi-tt-coupe", "porsche-911", "audi-r8"]} />
+		</Container>
+	</Section>
+
+	{/* CTA */}
+	<Section class:list={"bg-gradient-to-br from-gray-900 to-gray-700"}>
+		<Container>
+			<Heading class:list={"mb-0 lg:mb-0 prose-invert text-center mx-auto"}>
+				<h2 slot="heading-title">还没找到心仪座驾?</h2>
+
+				<p slot="heading-content">
+					别担心，我们的专业团队随时为您效劳。
+					无论您钟情于线条流畅的跑车、踏实可靠的家庭用车，还是环保节能的混合动力车，总有一款能精准匹配您的需求与预算，让您轻松觅得专属座驾。
+				</p>
+
+				<Button href="/contact" color="white" class:list={"mt-8"}>联系我们</Button>
+			</Heading>
+		</Container>
+	</Section>
+
+	{/* Cars */}
+	<Section class:list={"bg-gray-50"}>
+		<Container>
+			<Heading>
+				<h2 slot="heading-title" class="mb-0">最新到店车型</h2>
+				<p slot="heading-content">
+					新鲜到店的宝藏车型已就位，为您的选车清单注入新灵感！
+				</p>
+			</Heading>
+
+			<ShowCars ui="grid" slugs={["audi-tt-coupe", "aston-martin-db11", "xiaomi-su7max"]} />
+		</Container>
+	</Section>
+
+	{/* News */}
+	<Section>
+		<Container>
+			<Heading class:list={"max-w-3xl"}>
+				<h2 slot="heading-title">最新资讯</h2>
+
+				<p slot="heading-content">
+					浏览我们的资讯内容，即可深入了解精选车型亮点、专属优惠活动及汽车行业前沿资讯 —— 让您与爱车相关的一切信息，都能同步更新、尽在掌握。
+				</p>
+			</Heading>
+
+			<ShowPosts />
+		</Container>
+	</Section>
+
+	{/* FAQ */}
+	<Section class:list={"bg-gray-50"}>
+		<Container>
+			<Heading class:list={"max-w-3xl mx-auto lg:text-center"}>
+				<h2 slot="heading-title">常见问题解答</h2>
+
+				<p slot="heading-content">
+					
+				</p>
+			</Heading>
+
+			<Faq
+				items={[
+					{
+						question: "车辆信息真实度如何保障？",
+						answer: "我们平台对每一辆上线售卖的汽车都进行严格审核。对于二手车，会通过专业检测团队进行多维度检测，提供详细检测报告，涵盖车辆外观、机械性能、事故历史等，还会查询车辆维修保养记录，确保信息真实准确。新车则直接与正规授权经销商合作，保证车辆配置、参数与官方一致。您看到的每一条车辆信息，都经过重重把关，放心挑选。",
+					},
+					{
+						question: "网站上的价格是最终成交价吗？有没有隐藏费用？",
+						answer: "我们网站所展示的价格，新车通常为厂商指导价或经销商直接给出的优惠裸车价，二手车是综合车况给出的合理价格。在您购车过程中，除了明确标注的车辆价格、上牌税费、保险等必要费用外，绝无任何隐藏费用。交易前，销售人员会为您详细列出所有费用明细，让您清清楚楚消费，明明白白购车。",
+					},
+					{
+						question: "网上购车的流程复杂吗？具体是怎样的？",
+						answer: "网上购车流程非常简便。您只需在我们网站挑选心仪车型，点击咨询按钮留下联系方式，我们专业销售顾问会第一时间与您沟通，为您解答疑问。确定意向后，若您选择全款购车，按指引完成支付，办理相关手续后即可安排提车；若选择贷款购车，销售顾问会协助您准备贷款资料，对接金融机构，审批通过后完成后续流程，提车轻松又便捷。整个过程都有专人跟进服务，让您无忧购车。",
+					},
+					{
+						question: "车辆售后维修保养怎么保障？",
+						answer: "如果您购买的是新车，可享受汽车厂商提供的全国联保服务，在全国任一品牌授权售后服务网点都能进行正规维修保养，保障您的权益。若是二手车，我们平台与多家专业汽车维修机构合作，提供一定期限的售后质保服务，涵盖发动机、变速箱等关键部件。在质保期内，车辆出现问题可联系我们，我们会安排就近维修机构处理，确保您用车安心。",
+					},
+					{
+						question: "能异地购车吗？异地上牌会不会很麻烦？",
+						answer: "我们支持异地购车。对于异地上牌，部分品牌车型有一定限制，不过我们的销售团队会提前与您沟通清楚。若符合上牌条件，我们会协助您准备相关上牌资料，如购车发票、车辆合格证等，还可提供上牌流程指导。部分地区我们还与当地车管所合作，为您提供代办上牌服务（可能会收取一定合理费用），让您异地购车、上牌轻松搞定。",
+					},
+				]}
+			/>
+		</Container>
+	</Section>
+
+	{/* Team */}
+	<Section>
+		<Container>
+			<Heading class:list={"max-w-3xl mx-auto lg:text-center"}>
+				<h2 slot="heading-title">我们的专业团队</h2>
+
+				<p slot="heading-content">
+					
+				</p>
+			</Heading>
+
+			<Team />
+		</Container>
+	</Section>
+</Layout>

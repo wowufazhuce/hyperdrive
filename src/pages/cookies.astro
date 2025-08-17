@@ -1,0 +1,178 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+---
+
+<Layout pageTitle="Cookie政策" title="Cookie政策" description="HyperDrive Cookie政策 - 我们如何使用Cookie和类似技术">
+	<Section class:list={"bg-gray-50"}>
+		<Container>
+			<div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+				<Heading>
+					<h1 class="text-2xl md:text-3xl font-bold text-gray-900" slot="heading-title">Cookie政策</h1>
+					<p slot="heading-content" class="text-gray-600 mt-4 text-base">
+						最后更新时间：2024年12月<br>
+						本Cookie政策阐述了HyperDrive如何使用Cookie和类似技术来收集、存储和访问您设备上的信息，以提供和改进我们的服务。
+					</p>
+				</Heading>
+
+				<div class="mt-12 space-y-12 text-gray-700">
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">什么是Cookie</h2>
+						<div class="space-y-4">
+							<p>Cookie是当您访问网站时存储在您的计算机、平板电脑或移动设备上的小型文本文件。它们被广泛用于使网站有效运行，并向网站所有者提供信息。</p>
+							<p>Cookie不会损坏您的设备，也不会让我们访问您设备的其他部分。每个Cookie都包含匿名信息，如唯一标识符、网站名称和一些数字。</p>
+						</div>
+					</section>
+
+					<hr class="border-gray-200 my-8">
+
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">我们使用的Cookie类型</h2>
+						<div class="space-y-6">
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-2">必要Cookie</h3>
+								<p>这些Cookie是网站正常运行所必需的，无法在我们的系统中关闭。它们通常仅在响应您所做的相当于服务请求的操作时设置，例如设置隐私偏好、登录或填写表格。您可以将浏览器设置为阻止或提醒您这些Cookie，但某些网站功能可能无法正常工作。</p>
+							</div>
+
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-2">性能Cookie</h3>
+								<p>这些Cookie使我们能够计算访问量和流量来源，以便我们衡量和改进网站的性能。它们帮助我们了解哪些页面最受欢迎和最不受欢迎，并了解访问者在网站上的移动情况。这些Cookie收集的所有信息都是汇总的，因此是匿名的。</p>
+							</div>
+
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-2">功能Cookie</h3>
+								<p>这些Cookie使网站能够提供增强的功能和个性化。它们可能由我们或我们已将其服务添加到我们页面的第三方提供商设置。如果您不允许这些Cookie，某些服务可能无法正常工作。</p>
+							</div>
+
+							<div>
+								<h3 class="font-semibold text-gray-900 mb-2">定向Cookie</h3>
+								<p>这些Cookie可能由我们的广告合作伙伴通过我们的网站设置。它们可能被这些公司用来建立您的兴趣档案，并在其他网站上向您展示相关广告。它们不直接存储个人信息，但基于唯一标识您的浏览器和互联网设备。</p>
+							</div>
+						</div>
+					</section>
+
+					<hr class="border-gray-200 my-8">
+
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">我们使用的具体Cookie</h2>
+						<div class="space-y-4">
+							<p>以下是我们网站上使用的主要Cookie列表：</p>
+							<div class="overflow-x-auto">
+								<table class="min-w-full divide-y divide-gray-200">
+									<thead class="bg-gray-50">
+										<tr>
+											<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Cookie名称</th>
+											<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">类型</th>
+											<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">用途</th>
+											<th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">有效期</th>
+										</tr>
+									</thead>
+									<tbody class="bg-white divide-y divide-gray-200">
+										<tr>
+											<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">PHPSESSID</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">必要</td>
+											<td class="px-6 py-4 text-sm text-gray-500">会话管理</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">会话结束</td>
+										</tr>
+										<tr>
+											<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">_ga</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">性能</td>
+											<td class="px-6 py-4 text-sm text-gray-500">Google Analytics统计</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">2年</td>
+										</tr>
+										<tr>
+											<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">_gid</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">性能</td>
+											<td class="px-6 py-4 text-sm text-gray-500">Google Analytics统计</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">24小时</td>
+										</tr>
+										<tr>
+											<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">cookie_consent</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">必要</td>
+											<td class="px-6 py-4 text-sm text-gray-500">Cookie偏好设置</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1年</td>
+										</tr>
+										<tr>
+											<td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">user_pref</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">功能</td>
+											<td class="px-6 py-4 text-sm text-gray-500">用户偏好设置</td>
+											<td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">30天</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</section>
+
+					<hr class="border-gray-200 my-8">
+
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">第三方Cookie</h2>
+						<div class="space-y-4">
+							<p>除了我们自己的Cookie外，我们还使用各种第三方Cookie来报告使用情况统计、投放广告以及改善用户体验。这些第三方可能包括：</p>
+							<ul class="list-disc pl-6 space-y-2">
+								<li><strong>Google Analytics</strong> - 用于分析网站流量和用户行为</li>
+								<li><strong>Facebook Pixel</strong> - 用于社交媒体整合和广告</li>
+								<li><strong>微信分享</strong> - 用于社交媒体分享功能</li>
+								<li><strong>百度统计</strong> - 用于网站性能分析</li>
+							</ul>
+							<p class="mt-4">这些第三方Cookie的使用受其自身隐私政策的约束，我们建议您查阅这些第三方的隐私政策以了解更多信息。</p>
+						</div>
+					</section>
+
+					<hr class="border-gray-200 my-8">
+
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">管理Cookie</h2>
+						<div class="space-y-4">
+							<p>您有权接受或拒绝Cookie。大多数网络浏览器会自动接受Cookie，但您通常可以修改浏览器设置以拒绝Cookie，如果您愿意这样做。您也可以删除已设置的Cookie。</p>
+							<p class="mb-4">请注意，如果您选择拒绝Cookie，您可能无法使用我们网站的全部功能：</p>
+							<ul class="list-disc pl-6 space-y-2">
+								<li>网站偏好设置可能无法保存</li>
+								<li>某些功能可能无法正常运行</li>
+								<li>您可能需要重复登录</li>
+								<li>个性化内容可能无法显示</li>
+							</ul>
+							<p class="mt-4">大多数浏览器允许您：</p>
+							<ul class="list-disc pl-6 space-y-2">
+								<li>查看已设置的Cookie</li>
+								<li>删除Cookie</li>
+								<li>阻止所有Cookie</li>
+								<li>阻止"第三方"Cookie</li>
+								<li>设置Cookie偏好</li>
+							</ul>
+						</div>
+					</section>
+
+					<hr class="border-gray-200 my-8">
+
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">Cookie政策变更</h2>
+						<p>我们可能会不时更新此Cookie政策。任何变更都将发布在此页面上，并标明更新日期。我们建议定期查看此页面，以了解我们如何使用Cookie的最新信息。</p>
+					</section>
+
+					<hr class="border-gray-200 my-8">
+
+					<section>
+						<h2 class="text-lg md:text-xl font-bold text-gray-900 mb-6">联系我们</h2>
+						<p class="mb-4">如果您对我们的Cookie政策有任何疑问或需要更多信息，请通过以下方式联系我们：</p>
+						<div class="space-y-2">
+							<p><strong>电子邮件：</strong> privacy@hyperdrive.com</p>
+							<p><strong>电话：</strong> (028) 3368-8888</p>
+							<p><strong>地址：</strong> 四川成都天府新区博览城路188号天府法务产业大厦31、32层</p>
+						</div>
+					</section>
+
+					<div class="mt-16 pt-8 border-t border-gray-200">
+						<p class="text-sm text-gray-500">
+							本Cookie政策的最终解释权归HyperDrive所有。我们致力于透明地告知您我们如何使用Cookie来保护您的隐私。
+						</p>
+					</div>
+				</div>
+			</div>
+		</Container>
+	</Section>
+</Layout>
+

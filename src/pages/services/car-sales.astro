@@ -1,0 +1,41 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+import FAQ from "~/components/Faq.astro";
+
+const faqItems = [
+    {
+        question: "我们销售的汽车类型有哪些？",
+        answer: "我们销售多种类型的汽车，涵盖豪华轿车、高性能跑车、SUV、越野车以及限量版车型等。每一款车型均经过严格甄选，确保在品质、性能与设计上都达到卓越标准，满足不同客户对于驾乘体验的多样化需求。",
+    },
+    {
+        question: "我可以以旧换新吗？",
+        answer: "我们提供旧车换新服务，您可以在购买新车的同时，将旧车以旧换新，获得额外的优惠。",
+    },
+    {
+        question: "提供贷款服务吗？",
+        answer: "我们提供多种灵活的融资选项，帮助您以更优惠的价格购买汽车。",
+    },
+];
+---
+
+<Layout pageTitle="Car Sales" title="Car Sales">
+	<Section class:list={"bg-gray-50"}>
+		<Container>
+			<Heading>
+				<h1 slot="heading-title">汽车销售</h1>
+				<p slot="heading-content">
+					HyperDrive 甄选全球优质车型，涵盖豪华轿车、性能跑车、高端 SUV 等多元品类。每款座驾均经专业团队严苛检测，确保品质卓越。从车型推荐到购车流程，提供一对一专属服务，助您轻松拥有心仪座驾。
+				</p>
+			</Heading>
+		</Container>
+	</Section>
+
+    <Section class:list={"bg-white"}>
+        <Container>
+            <FAQ items={faqItems} />
+        </Container>
+    </Section>
+</Layout>

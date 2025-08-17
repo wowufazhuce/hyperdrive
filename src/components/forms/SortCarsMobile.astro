@@ -1,0 +1,28 @@
+---
+import IconSort from "~/assets/images/icons/sort.svg";
+---
+
+<form id="form-sort-mobile" class="max-lg:shrink-0">
+	<div class="text-gray-800">
+		<label class="sr-only" for="sort">Sort</label>
+		<div class="grid grid-cols-1">
+			<select
+				name="sort"
+				id="sort-mobile"
+				class="appearance-none col-start-1 w-8 focus:outline-none row-start-1 outline-none bg-transparent"
+				aria-label="Sort cars by"
+			>
+				<option value="all">排序</option>
+				<option value="mileage-desc">里程: 高到低</option>
+				<option value="mileage-asc">里程: 低到高</option>
+				<option value="price-desc">价格: 高到低</option>
+				<option value="price-asc">价格: 低到高</option>
+				<option value="year-desc">年份: 近到远</option>
+				<option value="year-asc">年份: 远到近</option>
+			</select>
+			<IconSort
+				class="pointer-events-none text-white col-start-1 row-start-1 size-5 self-center justify-self-end"
+			/>
+		</div>
+	</div>
+</form>

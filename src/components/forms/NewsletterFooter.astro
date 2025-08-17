@@ -1,0 +1,40 @@
+---
+
+---
+
+<form id="form-newsletter-footer" action="#" class="mt-6 sm:flex sm:max-w-md lg:mt-0">
+	<label for="email-address" class="sr-only">邮箱地址</label>
+	<input
+		type="email"
+		name="newsletter-email-address"
+		id="newsletter-email-address"
+		autocomplete="email"
+		required
+		placeholder="输入您的电子邮箱地址"
+	/>
+	<div class="mt-4 sm:ml-4 sm:mt-0 sm:shrink-0">
+		<button type="submit" id="button-newsletter-footer-subscribe" class="button button-yellow">订阅</button>
+	</div>
+</form>
+<div id="success-message" class="max-w-md max-lg:mt-4 w-full flex items-center justify-center text-center" style="display: none;">
+	<p class="text-base lg:text-sm lg:text-balance text-left lg:text-center">
+		感谢您订阅我们的新闻通讯！我们将每周为您发送包含最新资讯的电子邮件。
+	</p>
+</div>
+
+<script>
+	document.addEventListener("astro:page-load", function () {
+		const form = document.getElementById("form-newsletter-footer") as HTMLFormElement;
+
+		if (form) {
+			const button = document.getElementById("button-newsletter-footer-subscribe")!;
+			const message = document.getElementById("success-message")!;
+
+			form.addEventListener("submit", function (e) {
+				e.preventDefault();
+				form.style.display = "none";
+                message.removeAttribute("style");
+			});
+		}
+	});
+</script>

@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"author": "知夏",
+		"title": "Excellent service",
+		"location": "互联网产品经理",
+		"description": "我在 HyperDrive 的体验非常棒。他们非常专业，帮我找到了完美的车。",
+		"img": "~/assets/images/avatar-empty.webp",
+		"starRating": 5,
+		"hidden": false
+	},
+	{
+		"id": 2,
+		"author": "翊阳",
+		"title": "Excellent service",
+		"location": "新手司机",
+		"description": "HyperDrive 的服务效率让我惊喜不已。原本以为买车要花好几天时间办理各种手续，没想到他们一站式搞定了所有流程，当天就顺利提车，工作人员的协调能力和执行力真的很强。",
+		"img": "~/assets/images/avatar-empty.webp",
+		"starRating": 4.5,
+		"hidden": false
+	},
+	{
+		"id": 3,
+		"author": "倩倩",
+		"title": "Great service",
+		"location": "设计师",
+		"description": "对比了好几家经销商，最终选择了 HyperDrive，果然没让人失望。他们的车源质量很有保障，每辆车都经过细致检测，价格也很透明，没有隐藏消费，让人买得踏实又省心。",
+		"img": "~/assets/images/avatar-empty.webp",
+		"starRating": 4,
+		"hidden": false
+	},
+	{
+		"id": 4,
+		"author": "风止",
+		"title": "Excellent service",
+		"location": "长途通勤族",
+		"description": "HyperDrive 的整体氛围特别好，从进店接待到后续服务，每一位员工都很热情友好，即使是一些小问题也会认真解答，这种注重客户体验的服务理念，让人感觉很舒服，以后换车还会选这里。",
+		"img": "~/assets/images/avatar-empty.webp",
+		"starRating": 4.8,
+		"hidden": false
+	},
+	{
+		"id": 5,
+		"author": "林浩东",
+		"title": "Fantastic experience",
+		"location": "自媒体博主",
+		"description": "不得不夸夸 HyperDrive 的售后团队，提车后发现有几个功能不太会用，联系他们后，很快就安排了专人耐心讲解，还贴心地发了操作视频，这种负责到底的态度让人特别放心。",
+		"img": "~/assets/images/avatar-empty.webp",
+		"starRating": 5,
+		"hidden": false
+	},
+	{
+		"id": 6,
+		"author": "王若曦",
+		"title": "Very satisfied",
+		"location": "二胎宝妈",
+		"description": "我对 HyperDrive 提供的服务非常满意。他们办事高效且乐于助人。",
+		"img": "~/assets/images/avatar-empty.webp",
+		"starRating": 4.7,
+		"hidden": false
+	}
+]

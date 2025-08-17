@@ -1,0 +1,40 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import Heading from "~/components/Heading.astro";
+import FAQ from "~/components/Faq.astro";
+
+const faqItems = [
+    {
+        question: "维修时能看到施工过程吗？",
+        answer: "部分门店提供透明车间服务，可通过监控或休息区玻璃窗观看维修过程，技师也会随时沟通施工细节。"
+    },
+    {
+        question: "维修时间大概需要多久？",
+        answer: "维修时间取决于问题的复杂程度。我们的团队会在诊断问题后提供一个估计时间。"
+    },
+    {
+        question: "维修时需要支付多少费用？",
+        answer: "维修费用根据问题的复杂程度和零件的成本而变化。我们会在维修开始前提供详细的费用说明。"
+    }
+];
+---
+
+<Layout pageTitle="Repairs" title="Repairs">
+    <Section class:list={"bg-gray-50"}>
+        <Container>
+            <Heading>
+                <h1 slot="heading-title">维修服务</h1>
+                <p slot="heading-content">
+                    HyperDrive 提供专业汽车维修服务，由资深技师团队操刀，配备尖端设备与原厂配件。从常规检修到复杂维修，兼顾精准与高效，全方位守护您的爱车性能与安全，让每一次驾乘皆安心。
+                </p>
+            </Heading>
+        </Container>
+    </Section>
+
+    <Section class:list={"bg-white"}>
+        <Container>
+            <FAQ items={faqItems} />
+        </Container>
+</Layout>

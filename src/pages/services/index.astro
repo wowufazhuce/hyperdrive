@@ -1,0 +1,130 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Container from "~/components/Container.astro";
+import GridAlt from "~/components/GridAlt.astro";
+import Heading from "~/components/Heading.astro";
+import Article from "~/components/Article.astro";
+import CardGridAlt from "~/components/CardGridAlt.astro";
+---
+
+<Layout pageTitle="Services">
+	<Section>
+		<Container>
+			<Heading>
+				<h2 slot="heading-title">我们提供的服务</h2>
+
+				<p slot="heading-content">
+					我们提供全方位的汽车相关服务，从汽车销售到汽车维修和保养，全方位满足您的需求。
+				</p>
+			</Heading>
+			<GridAlt>
+				<CardGridAlt
+					title="保养服务"
+					description="我们提供全面的保养服务，包括油更、轮胎轮换、制动检查和 fluid 检查。"
+					color="brand"
+					icon="checkmark"
+					href="/services/maintenance"
+				/>
+				<CardGridAlt
+					title="维修服务"
+					description="我们提供专业的维修服务，确保您的汽车在最短时间内恢复正常运行。"
+					color="brand"
+					icon="checkmark"
+					href="/services/repairs"
+				/>
+				<CardGridAlt
+					title="汽车销售"
+					description="我们甄选全球优质车型，涵盖豪华轿车、性能跑车、高端 SUV 等多元品类。每款座驾均经专业团队严苛检测，确保品质卓越。从车型推荐到购车流程，提供一对一专属服务，助您轻松拥有心仪座驾。"
+					color="brand"
+					icon="checkmark"
+					href="/services/car-sales"
+				/>
+				<CardGridAlt
+					title="汽车清洗"
+					description="我们提供专业的汽车清洗服务，确保您的汽车在最短时间内光亮如新。"
+					color="brand"
+					icon="checkmark"
+				/>
+				<CardGridAlt
+					title="轮胎服务"
+					description="我们提供专业的轮胎服务，确保您的汽车随时保持巅峰状态。"
+					color="brand"
+					icon="checkmark"
+				/>
+				<CardGridAlt
+					title="油更服务"
+					description="我们提供专业的油更服务，确保您的汽车在最短时间内保持最佳性能。"
+					color="brand"
+					icon="checkmark"
+				/>
+			</GridAlt>
+		</Container>
+	</Section>
+
+	<Section>
+		<Container>
+			<Article>
+				<h2>我们的综合服务</h2>
+				<p>
+					本公司以提供全方位服务满足您的各类汽车需求为傲。无论您想购置新车、需要保养维修，还是希望爱车始终保持最佳状态，
+					我们都能为您提供专业支持。我们经验丰富的专业团队致力于提供一流服务，确保您获得全然满意的体验。
+				</p>
+				<h3>保养服务</h3>
+				<p>
+					定期保养对保持车辆顺畅运行至关重要。我们的专业技师团队提供一流的保养服务，确保您的爱车始终处于最佳状态。
+					从更换机油、轮胎换位，到刹车检查和油液检测，我们提供全方位的保养套餐，可根据您的车辆需求量身定制。
+				</p>
+				<ul>
+					<li>更换机油</li>
+					<li>轮胎轮换</li>
+					<li>刹车检查</li>
+					<li>油液检测</li>
+				</ul>
+				<h3>维修服务</h3>
+				<p>
+					无论是小修小补还是大型维修，我们的团队都能从容应对。我们采用最新工具和技术，让您的爱车尽快重返路面。
+					我们的维修服务包括发动机诊断、变速箱维修、电气系统故障排查等。无论遇到何种问题，您都可以信赖我们提供可靠高效的维修解决方案。
+				</p>
+				<blockquote>"一次到位的优质维修！"</blockquote>
+				<h3>汽车销售</h3>
+				<p>
+					想换新车吗？我们提供丰富多样的车型供您选择。我们的销售团队将协助您找到最符合需求和预算的理想座驾。
+					我们会提供每款车的配置、性能及历史记录等详细信息，确保您做出明智的决策。此外，我们灵活的金融贷款方案让您轻松开上梦想座驾。
+				</p>
+				<ul>
+					<li>丰富的车型选择</li>
+					<li>详细的配置信息</li>
+					<li>灵活的金融贷款方案</li>
+				</ul>
+				<h3>汽车清洗</h3>
+				<p>
+					通过我们的专业洗车服务，让您的爱车始终保持最佳外观。我们提供多种套餐供您选择，从基础清洗到全面精洗应有尽有。
+					我们的洗车服务包括外部清洗、内部清洁、打蜡和抛光。我们采用高品质产品和专业技术，让您的爱车焕发展厅般的光彩。
+				</p>
+				<blockquote>"您的爱车值得最好的呵护！"</blockquote>
+				<h3>轮胎服务</h3>
+				<p>
+					无论您需要更换新轮胎、轮胎换位还是轮胎维修，我们的轮胎服务都能满足您的需求。我们提供多种轮胎供您选择，并由专业人员进行安装。
+					我们的轮胎服务还包括四轮定位、动平衡和胎压检测，确保您的车辆在行驶中具备最佳性能和安全性。
+				</p>
+				<ul>
+					<li>新轮胎</li>
+					<li>轮胎轮换</li>
+					<li>车轮对齐</li>
+					<li>压力检查</li>
+				</ul>
+				<h3>油更服务</h3>
+				<p>
+					定期更换机油对保持发动机顺畅运行至关重要。我们快捷便捷的换油服务能让您迅速重返旅途。
+					我们采用高品质机油和滤芯，为您的发动机提供保护并提升其性能。此外，每次换油我们还会提供免费的多项目检查，以便及早发现潜在问题。
+				</p>
+				<blockquote>"让您的爱车时刻保持巅峰状态！"</blockquote>
+				<p>
+					今日光临，体验我们的卓越服务，便知为何我们是您汽车需求的最佳之选。我们友善的工作人员随时准备为您提供协助，
+					确保您的到访轻松愉快、毫无烦忧。请信赖我们，我们会让您的爱车始终保持最佳状态，并为您提供最优质的汽车解决方案。
+				</p>
+			</Article>
+		</Container>
+	</Section>
+</Layout>
